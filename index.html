@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/7ab92cd7d8.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        color: black;
+      }
+      .two {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .inline1 {
+        display: flex;
+        width: 600px;
+        justify-content: center;
+        font-size: 168px;
+        margin-top: 250px;
+      }
+      .inline1 div {
+        display: flex;
+        width: 400px;
+        justify-content: center;
+      }
+      .inline2 {
+        display: flex;
+        width: 700px;
+        justify-content: center;
+        font-size: 68px;
+        margin-top: 10px;
+      }
+      .inline2 div {
+        display: flex;
+        width: 600px;
+
+        justify-content: center;
+      }
+      .todo {
+        display: block;
+        justify-content: center;
+        text-align: center;
+      }
+      footer {
+        text-align: center;
+        padding-top: 230px;
+      }
+      h3 {
+        font-size: 3em;
+      }
+    </style>
+  </head>
+  <body background="img/ai-generated-8772642_1920.jpg">
+    <div class="two">
+      <div class="inline1" id="time">
+        <div id="hour">12</div>
+        <div>:</div>
+        <div id="minute">00</div>
+      </div>
+      <div class="inline2">
+        <div id="hello"></div>
+      </div>
+    </div>
+    <div class="todo" id="todo">
+      <br />
+
+      <h2>Today</h2>
+      <input type="text" id="text" onkeypress="show_name(event)" />
+
+      <h3 id="todolist"></h3>
+      <br />
+      <button id="deleteButton"><h2>삭제</h2></button><br />
+      <br />
+      <br />
+      <h3 id="word">asd</h3>
+    </div>
+
+    <!-- <i class="fa-solid fa-person" style="font-size: 20px"></i> -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
