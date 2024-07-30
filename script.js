@@ -87,10 +87,14 @@ function time() {
   } else {
     minuteTag.textContent = minute;
   }
-  hourTag.textContent = hour;
+  if (hour < 10) {
+    hourTag.textContent`0${hour}`;
+  } else {
+    hourTag.textContent = hour;
+  }
 }
 // setinterval 로 계속 시간을 불러옴
-setInterval(time, 10);
+setInterval(time, 5);
 
 // 엔터키를 누르면 상호작용을 하는 함수
 function show_name(e) {
